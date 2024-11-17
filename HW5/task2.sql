@@ -1,19 +1,19 @@
---1
+-- 1
 SELECT sum(bill_total) AS Income
 FROM restBill;
 
 
---2
+-- 2
 SELECT SUM(bill_total) AS "Feb Income"
 FROM restBill
 WHERE bill_date BETWEEN "160201" AND "160229";
 
---3
+-- 3
 SELECT AVG(bill_total) 
 FROM  restBill
 WHERE table_no = 00002;
 
---4
+-- 4
 	SELECT 
     MIN(no_of_seats) AS "Min",
     MAX(no_of_seats) AS "Max",
@@ -21,7 +21,7 @@ WHERE table_no = 00002;
 FROM restRest_table
 WHERE room_name = 'Blue';
 
---5
+-- 5
 SELECT COUNT(DISTINCT table_no)
 FROM restBill
 WHERE waiter_no IN  ("002","004");
